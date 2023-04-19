@@ -7,7 +7,7 @@
             <div class="card-body">
                 <!-- badge -->
                 <div class="text-center position-relative ">
-                    <div class=" position-absolute r-n10  t-n10 rounded" title="Add to cart">
+                    <div class="bg-white position-absolute r-n10 rounded rounded-circle t-n10" title="Add to cart">
                         <span class="text-primary cursor-pointer "
                               @click="$emit('addToCart',product)"
                         >
