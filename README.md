@@ -52,7 +52,7 @@ php artisan db:seed
 #### Link Storage
 
 ```bash
-php artisan sotrage:link
+php artisan storage:link
 ```
 
 #### Install Node Dependencies
