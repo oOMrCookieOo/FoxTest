@@ -66,6 +66,14 @@ npm install  --legacy-peer-deps
 npm run build or npm run dev
 ```
 
+#### run server
+
+```bash
+php artisan serve
+
+then head to : http://localhost:8000
+```
+
 #### Default seller credentials
 
 ```bash
