@@ -19,6 +19,7 @@ class ProductController extends Controller
             ->when($request->filled('category'),function ($query) use ($request){
                 $query->whereRelation('category','id','=',$request->category);
             })
+            ->latest()
             ->withWhereHas('category')
             ->paginate(12);
         return ProductResource::collection($data);

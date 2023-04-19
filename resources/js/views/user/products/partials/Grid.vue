@@ -2,7 +2,7 @@
     <div
         v-for="(product,key) in products"
         :key="'grid'+key"
-        class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+        class="col-12 col-md-6 col-lg-4 col-xxl-3 mt-3">
         <div class="card hover-card">
             <div class="card-body">
                 <!-- badge -->

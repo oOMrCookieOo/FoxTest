@@ -39,9 +39,9 @@ class Product extends Model
     public function getImageUrlAttribute()
     {
         //just For seeder it can be changed later to suit more behaviours
-        if (str($this->image)->contains('https')) return 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-force-1-07-mens-shoes-xDpsTk.png';
+        if (str($this->image)->contains('https')) return $this->image;
 
-        return $this->image ? asset(Storage::disk('public')->url($this->image))
-            : 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-force-1-07-mens-shoes-xDpsTk.png';
+        return asset(Storage::disk('public')->url($this->image));
+
     }
 }
